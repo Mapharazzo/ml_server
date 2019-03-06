@@ -30,7 +30,6 @@ async def download_file(url, dest):
             with open(dest, 'wb') as f: f.write(data)
 
 async def setup_learner():
-    await download_file(export_file_url, path/export_file_name)
     for key, value in export_file_download.items():
         filename_learner = key
         if os.path.exists(path/filename_learner):
