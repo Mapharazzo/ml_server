@@ -9,7 +9,6 @@ import os
 from fastai import *
 from fastai.vision import *
 
-export_file_url = 'https://www.dropbox.com/s/v6cuuvddq73d1e0/export.pkl?raw=1'
 export_file_names = ['bears.pkl', 'food.pkl']
 export_file_download = {
     'bears.pkl': 'https://drive.google.com/uc?export=download&id=1n00dK5dsE4NelArlo5KYFY6-AVLAOkaw',
