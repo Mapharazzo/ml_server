@@ -31,8 +31,8 @@ async def download_file(url, dest):
 async def setup_learner():
     for key, value in export_file_download.items():
         filename_learner = key
-        if os.path.exists(path/filename_learner):
-            os.remove(path/filename_learner)
+        # if os.path.exists(path/filename_learner):
+        #     os.remove(path/filename_learner)
         await download_file(value, path/filename_learner)
     try:
         learn = dict()
