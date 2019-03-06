@@ -1,0 +1,1 @@
+sudo env PATH=/home/mapha/anaconda3/envs/server/bin:/home/mapha/anaconda3/condabin:/home/mapha/bin:/home/mapha/.local/bin:/home/mapha/anaconda3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin python app/server.py serve > log.txt

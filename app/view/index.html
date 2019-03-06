@@ -1,0 +1,84 @@
+﻿<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <link rel='stylesheet' href='../static/style.css'>
+    <script src='../static/client.js'></script>
+</head>
+<body>
+    <div>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Bears')">Bears</button>
+            <button class="tablinks" onclick="openTab(event, 'Food')">Food</button>
+            <!--<button class="tablinks" onclick="openCity(event, 'Tokyo')">Chat</button>-->
+        </div>
+
+        <!-- Tab content -->
+        <div id="Bears" class="tabcontent">
+            <div class='center'>
+                <div class='title'>Classify Bear Images 🐻</div>
+                <p>
+                    Use images of <strong>teddy</strong> bears, <strong>black</strong> bears, <strong>grizzly</strong> bears, or
+                    all three!
+                </p>
+                <div class='content'>
+                    <div class='no-display'>
+                        <input id='file-input-bears'
+                               class='no-display'
+                               type='file'
+                               name='file'
+                               accept='image/*'
+                               onchange="showPicked(this, 'bears')">
+                    </div>
+                    <button class='choose-file-button' type='button' onclick="showPicker('bears')">Select Image</button>
+                    <div class='upload-label'>
+                        <label id='upload-label-bears'>No file chosen</label>
+                    </div>
+                    <div>
+                        <img id='image-picked-bears' class='no-display' alt='Chosen Image' height='200'>
+                    </div>
+                    <div class='analyze'>
+                        <button id='analyze-button-bears' class='analyze-button' type='button' onclick="analyze('bears')">Analyze</button>
+                    </div>
+                    <div class='result-label'>
+                        <label id='result-label-bears'></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Food" class="tabcontent">
+            <div class='center'>
+                <div class='title'>Classify Food Images</div>
+                <p>
+                    Use images of <strong>burgers</strong>, <strong>sandwiches</strong> or <strong>shawarma</strong>.
+                </p>
+                <div class='content'>
+                    <div class='no-display'>
+                        <input id='file-input-food'
+                               class='no-display'
+                               type='file'
+                               name='file'
+                               accept='image/*'
+                               onchange="showPicked(this, 'food')">
+                    </div>
+                    <button class='choose-file-button' type='button' onclick="showPicker('food')">Select Image</button>
+                    <div class='upload-label'>
+                        <label id='upload-label-food'>No file chosen</label>
+                    </div>
+                    <div>
+                        <img id='image-picked-food' class='no-display' alt='Chosen Image' height='200'>
+                    </div>
+                    <div class='analyze'>
+                        <button id='analyze-button-food' class='analyze-button' type='button' onclick="analyze('food')">Analyze</button>
+                    </div>
+                    <div class='result-label'>
+                        <label id='result-label-food'></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
